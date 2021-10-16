@@ -498,8 +498,11 @@ nav a{
         padding: 0;
     }
 }
-@media (max-width: 769px){
+@media (max-width: 768px){
      /* 헤더 */
+    header{
+        background-color: rgba(40, 23, 5, 0.8);
+    }
     .gnb{
         width: 100%;
         flex-direction: column;
@@ -507,7 +510,7 @@ nav a{
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: rgba(255,255,255,.8);
+        background-color: rgba(40, 23, 5, 0.8);
         padding: 30px 0;
         display: none;  
     }
@@ -610,6 +613,11 @@ nav a{
     }
     .location {
         padding: 50px;
+    }
+}
+@media (min-width: 769px){
+    .gnb{
+        display: flex !important;
     }
 }
 @media (max-width: 541px){

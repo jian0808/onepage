@@ -40,9 +40,6 @@ $('#tabs-1').click(function(){
     $('#tabs-1').css('color','#fff');
     $('#tabs-2').css('color','rgba(255,255,255,.3)');
     $('#tabs-3').css('color','rgba(255,255,255,.3)');
-    $('.deco1').css('border-bottom','3px solid #fff');
-    $('.deco2').css('border-bottom','none');
-    $('.deco3').css('border-bottom','none');
 });
 $('#tabs-2').click(function(){
     $('.tab01').css('display','none');
@@ -51,9 +48,6 @@ $('#tabs-2').click(function(){
     $('#tabs-2').css('color','#fff');  
     $('#tabs-1').css('color','rgba(255,255,255,.3)');
     $('#tabs-3').css('color','rgba(255,255,255,.3)');  
-    $('.deco2').css('border-bottom','3px solid #fff');
-    $('.deco1').css('border-bottom','none');
-    $('.deco3').css('border-bottom','none');
 });
 $('#tabs-3').click(function(){
     $('.tab01').css('display','none');
@@ -62,9 +56,6 @@ $('#tabs-3').click(function(){
     $('#tabs-3').css('color','#fff');
     $('#tabs-1').css('color','rgba(255,255,255,.3)');
     $('#tabs-2').css('color','rgba(255,255,255,.3)'); 
-    $('.deco3').css('border-bottom','3px solid #fff');  
-    $('.deco1').css('border-bottom','none');
-    $('.deco2').css('border-bottom','none');
 });
 
 

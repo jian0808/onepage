@@ -264,6 +264,7 @@ nav a{
     justify-content: center;
     transition: all ease 1s;
     color: transparent;
+    text-align: center;
 }
 .text-area:hover{
     color: #fff;
@@ -308,12 +309,27 @@ nav a{
     cursor: pointer;
     position: relative;
 }
-.deco1{
-    border-bottom: 3px solid #fff;
-}
 #tabs-2, #tabs-3{
     color: rgba(255,255,255,.3);
 }
+.sliding-u-l-r {
+    display: inline-block;
+      position: relative;
+    text-decoration: none;
+  }
+  .sliding-u-l-r:after {
+    content: '';
+    position: absolute;
+    margin-bottom: -10px;
+    bottom: 0;
+    left: 2px;
+    width: 0;
+    border-bottom: 3px solid #fff;
+    transition: 0.44s;
+  }
+  .sliding-u-l-r:hover:after {
+    width: 99%;
+  }
 .sec04-right{
     width: 70%;
     background-color: #FCFAEB;
@@ -448,7 +464,6 @@ nav a{
         font-size: 1.250rem;
     }
     .text-area p{
-        text-align: center;
         font-size: 0.875rem;
         font-weight: 200;
     }

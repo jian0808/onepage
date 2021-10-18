@@ -612,7 +612,7 @@ nav a{
         height: 400px;
     }
     .location {
-        padding: 50px;
+        padding: 40px;
     }
 }
 @media (min-width: 769px){
@@ -626,7 +626,7 @@ nav a{
     }
     /* 메인비주얼 */
     .main-title {
-        padding: 240px 0;
+        padding: 200px 0;
     }    
     .main-title p {
         font-size: 1.5rem;
@@ -729,6 +729,12 @@ nav a{
     .goust-btn {
         font-size: 2rem;
     }
+    .gnb{
+        top: 52px;
+    }
+    .gnb li{
+        font-size: 1rem;
+    }
     /* 메인비주얼 */
     .main-title p {
         font-size: 1.5rem;
@@ -752,6 +758,12 @@ nav a{
     }
     .about {
         padding: 50px 15px 60px;
+    }
+    .about_img{
+        height: 300px;
+    }
+    .about_img::before {
+        height: 300px;
     }
     .text-vertical {
         margin-bottom: 20px;

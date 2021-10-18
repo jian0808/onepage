@@ -391,8 +391,10 @@ nav a{
 .sns{
     padding-top: 60px;
 }
-.sns img{
+.sns a{
     display: inline-block;
+}
+.sns img{
     margin-right: 40px;
 }
 

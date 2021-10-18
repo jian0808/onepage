@@ -466,6 +466,7 @@ nav a{
     .text-area p{
         font-size: 0.875rem;
         font-weight: 200;
+        line-height: 16px;
     }
     .info01 {
         margin-top: 40px;
@@ -698,7 +699,7 @@ nav a{
     }
     .sec04-right {
         width: 100%;
-        padding: 80px 0;
+        padding: 50px 0;
     }
     .cls-name span {
         font-size: 1.5rem;
@@ -789,6 +790,9 @@ nav a{
     }
     .section03-oneday-text p+p {
         padding: 0;
+    }
+    .text-area p{
+        font-size: 0.750rem;
     }
     /* 정규수업 */
     .sec04-left {

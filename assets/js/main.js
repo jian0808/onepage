@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySwiper", {
       }
   });
 
-// taps
+// 정규수업 taps
 $('#tabs-1').click(function(){
     $('.tab01').css('display','block');
     $('.tab02').css('display','none');
@@ -57,7 +57,3 @@ $('#tabs-3').click(function(){
     $('#tabs-1').css('color','rgba(255,255,255,.3)');
     $('#tabs-2').css('color','rgba(255,255,255,.3)'); 
 });
-
-
-
-          

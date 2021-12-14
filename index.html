@@ -11,9 +11,9 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta name="keyword" content="목공방,공방,나무공방" />
     <!-- mobile -->
-    <meta property="og:image" content="images/mo.jpg">
-    <meta property="og:title" content="일상속 여유를 찾는 알베로 목공방" />
-    <meta property="og:description" content="나만의 작품을 만들어보세요." />
+    <meta property="og:image" content="assets/images/mobile_thum.jpg" />
+    <meta property="og:title" content="알베로 목공방" />
+    <meta property="og:description" content="일상 속 여유를 찾고 나만의 작품을 만들어보세요." />
     <meta property="og:url" content="http://jian925.dothome.co.kr/ /">
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
@@ -214,9 +214,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
     <!-- jquery 3.2.1 -->
     <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- 카카오맵 -->
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e16f289e59b81832a328abb0a99ca209"></script> 
     <!-- slick -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- aos js -->
@@ -225,51 +227,5 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
-    <!-- 카카오맵 -->
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e16f289e59b81832a328abb0a99ca209"></script>    
-    <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-        mapOption = { 
-                center: new kakao.maps.LatLng(37.63922200298304, 126.62867304924596), // 지도의 중심좌표
-                level: 4 // 지도의 확대 레벨
-            };
-
-        var map = new kakao.maps.Map(mapContainer, mapOption);
-
-        var imageSrc = 'assets/images/placeholder.png', // 마커이미지의 주소입니다    
-            imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
-            imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            markerPosition = new kakao.maps.LatLng(37.63922200298304, 126.62867304924596); // 마커가 표시될 위치입니다
-
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-        position: markerPosition,
-        image: markerImage // 마커이미지 설정 
-        });
-
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);  
-
-        // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        var content = '<div class="customoverlay">' +
-            '  <a href="http://kko.to/62GiLynfj" target="_blank">' +
-            '    <span class="title">알베로 목공교실</span>' +
-            '  </a>' +
-            '</div>';
-
-        // 커스텀 오버레이가 표시될 위치입니다 
-        var position = new kakao.maps.LatLng(37.63922200298304, 126.62867304924596);  
-
-        // 커스텀 오버레이를 생성합니다
-        var customOverlay = new kakao.maps.CustomOverlay({
-            map: map,
-            position: position,
-            content: content,
-            yAnchor: 1 
-        });
-    </script>
 </body>
 </html>

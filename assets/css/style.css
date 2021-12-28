@@ -5,7 +5,7 @@
 /* 카카오맵 */
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #56423B url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
 .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
 .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}        
 
@@ -152,7 +152,7 @@ nav a{
 }
 .about_txt{
     margin-left: 60px;
-    padding: 160px 0 0 0;
+    padding: 160px 15px 0 0;
 }
 .about_txt h3{
     font-size: 2.250rem;
@@ -280,7 +280,6 @@ nav a{
     height: auto;
 }
 
-
 /* 정규수업 */
 .section04{
     width: 100%;
@@ -379,17 +378,19 @@ nav a{
 .location{
     font-size: 2rem;
     color: #fff;
+    padding: 0 15px;
 }
 .location h5{
     font-weight: 500;
     padding-top: 50px;
 }
 .location p{
-    font-weight: 300;
+    font-weight: 200;
     padding-top: 10px;
+    font-size: 1.750rem;
 }
 .sns{
-    padding-top: 60px;
+    padding-top: 50px;
 }
 .sns a{
     display: inline-block;
@@ -428,6 +429,15 @@ nav a{
 @media (max-width: 1025px){
     .container {
         width: 100%;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+    .gnb li{
+        font-size: 1.125rem;
+    }
+    .main-title {
+        padding: 300px 0;
     }
     /* 공방소개 */
     .section02 {
@@ -501,8 +511,35 @@ nav a{
     .location {
         font-size: 1.5rem;
     }
+    .location p{
+        font-size: 1.5rem;
+    }
     .tel h5{
         padding: 0;
+    }
+}
+@media (max-width: 942px){
+    /* 공방소개 */
+    .about {
+        padding: 80px 20px 100px;
+    }
+    .about-con{
+        flex-direction: column;
+    }
+    .text-vertical{
+        writing-mode:horizontal-tb;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    .text-vertical::before {
+        display: none;
+    }
+    .about_img {
+        height: 480px;
+        width: 100%;
+        margin: 0;
     }
 }
 @media (max-width: 768px){
@@ -539,31 +576,7 @@ nav a{
     }
     .main-title h2 {
         font-size: 3rem;
-    }
-    /* 공방소개 */
-    .about {
-        padding: 80px 20px 100px;
-    }
-    .about-con{
-        flex-direction: column;
-    }
-    .text-vertical{
-        writing-mode:horizontal-tb;
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 4rem;
-        font-weight: 400;
-    }
-    .text-vertical::before {
-        display: none;
-    }
-    .about_img {
-        height: 480px;
-    }
-    .about_img{
-        width: 100%;
-        margin: 0;
-    }
+    }   
     /* 원데이클래스 */
     .section03 {
         padding: 80px 0;
@@ -623,6 +636,9 @@ nav a{
     }
     .location {
         padding: 40px;
+    }
+    .location .sns img{
+        width: 80%;
     }
 }
 @media (min-width: 769px){
@@ -819,6 +835,10 @@ nav a{
     }
     /* 오시는길 */
     .location {
+        font-size: 1.250rem;
+        padding: 50px 20px;
+    }
+    .location p{
         font-size: 1.125rem;
     }
 }

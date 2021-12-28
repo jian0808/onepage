@@ -420,6 +420,11 @@ nav a{
         width: 40%;
     }
 }
+@media (max-width: 1227px){
+    .swiper-btn{
+        display: none;
+    }
+}
 @media (max-width: 1025px){
     .container {
         width: 100%;
@@ -588,6 +593,9 @@ nav a{
     }
     .info01 br{
         display: none;
+    }
+    .swiper-btn{
+        display: flex;
     }
     /* 정규수업 */
     .title-box h2 {

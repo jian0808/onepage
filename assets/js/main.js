@@ -13,6 +13,10 @@ var swiper = new Swiper(".mySwiper", {
     observer: true,
     observeParents: true,
     spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
